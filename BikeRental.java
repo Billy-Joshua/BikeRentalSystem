@@ -64,7 +64,7 @@ public class BikeRental {
         // validation
         if (start < 0 || start > 23 || end < 1 || end > 24 || start >= end) {
             System.out.println("Invalid input.");
-            return;
+            return; // exit the method if input is invalid
         }
 
         int cost = calculateCost(start, end);
